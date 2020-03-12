@@ -7,7 +7,7 @@ echo color("blue","| _______|____•___||_____•____|_______|\n");
 echo color("blue","| ________|______|__|_______|_________|\n");
 echo color("blue","| __________|___|_____|___|___________|\n");
 echo color("blue","| ____________|_________|_____________|\n");
-echo color("blue","| Version :_______∆UBUR - UBUR∆_______|\n");
+echo color("blue","| Version :_______KEN WISNOE_______|\n");
 echo color("green","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("blue"," ======================================\n");
 
@@ -55,7 +55,7 @@ echo color("blue"," ======================================\n");
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
+        echo "\n".color("yellow","!] Claim voc GOFOODLAGI090320A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -68,7 +68,7 @@ echo color("blue"," ======================================\n");
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
+        echo "\n".color("yellow","!] Claim voc COBAGOFOOD090320A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -82,7 +82,7 @@ echo color("blue"," ======================================\n");
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$messageboba10);
-        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
+        echo "\n".color("yellow","!] Claim voc GOFOODLAGI090320A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -97,24 +97,24 @@ echo color("blue"," ======================================\n");
         }else{
         echo "\n".color("green","+] Message: ".$messageboba19);
         goride:
-        echo "\n".color("yellow","!] Claim voc COBAGORIDE");
+        echo "\n".color("yellow","!] Claim voc COBAGOFOOD090320A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
-        echo "\n".color("yellow","!] Claim voc COBAGORIDE");
+        echo "\n".color("yellow","!] Claim voc GOFOODLAGI090320A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
+        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOODLAGI090320A"}');
         $message2 = fetch_value($goride1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message2);
         sleep(3);
